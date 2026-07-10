@@ -54,7 +54,7 @@ const BLOG = {
   ...require('./conf/dev.config'), 
 
   // 自定义外部脚本
-  CUSTOM_EXTERNAL_JS: [''], 
+  CUSTOM_EXTERNAL_JS: ['/dify.js'],
   CUSTOM_EXTERNAL_CSS: [''], 
 
   // 自定义菜单
