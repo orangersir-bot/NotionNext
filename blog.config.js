@@ -71,7 +71,7 @@ const BLOG = {
   // 【欢迎语设置】会显示在首页大图上，用英文逗号隔开
   GREETING_WORDS:
     process.env.NEXT_PUBLIC_GREETING_WORDS ||
-    '欢迎来到xxxxxxx, 记录我们的成长故事, 传播实践正能量',
+    '欢迎来到冀艺拾光实践队, 记录我们的成长故事, 传播实践正能量',
 
   // uuid重定向至 slug
   UUID_REDIRECT: process.env.UUID_REDIRECT || false
