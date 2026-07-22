@@ -19,7 +19,7 @@ const BLOG = {
   APPEARANCE_DARK_TIME: process.env.NEXT_PUBLIC_APPEARANCE_DARK_TIME || [18, 6], 
 
   // 【团队信息设置】你可以把下面的引号内容改成你真实的名称
-  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || '社会实践团', 
+  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || '冀艺拾光实践队', 
   BIO: process.env.NEXT_PUBLIC_BIO || '记录青春足迹，服务乡村振兴。', 
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://notion-next-z7xi.vercel.app', // 已填入你的网址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || '社会实践, 大学生, 调研报告, 志愿服务', 
