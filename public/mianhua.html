@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>面花刻模3D展示</title>
+
+  <script
+    type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      font-family: "Microsoft YaHei", sans-serif;
+      background: #f5f5f5;
+      color: #332c27;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      overflow: hidden;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 100%;
+    }
+
+    aside {
+      padding: 42px 32px;
+      overflow-y: auto;
+      background: #fffaf6;
+      box-shadow: -5px 0 20px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      font-size: 30px;
+    }
+
+    h2 {
+      margin: 26px 0 8px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0;
+      color: #695f58;
+      line-height: 1.8;
+    }
+
+    .label {
+      margin-bottom: 10px;
+      color: #d54c77;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+
+    .tip {
+      margin-top: 28px;
+      padding: 14px;
+      border-radius: 10px;
+      background: #f8e6ec;
+      color: #98445f;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      body {
+        display: block;
+        overflow-y: auto;
+      }
+
+      model-viewer {
+        height: 65vh;
+      }
+
+      aside {
+        padding: 28px 22px;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <model-viewer
+    src="/models/jituantuan.glb"
+    alt="面花刻模3D模型"
+    camera-controls
+    auto-rotate
+    shadow-intensity="1"
+    environment-image="neutral"
+    loading="eager">
+  </model-viewer>
+
+  <aside>
+    <div class="label">非遗数字展陈</div>
+    <h1>面花刻模</h1>
+
+    <p>
+      面花刻模
+      连接传统文化展示与数字互动体验。
+    </p>
+
+    <h2>造型由来</h2>
+    <p>
+      圆润的小鸡轮廓象征亲和与团结，粉色吊环强化了表演性和动态感。
+    </p>
+
+    <h2>细节设计</h2>
+    <p>
+      红粉渐变鸡冠、黑色大眼、黄色小嘴和米白色身体，
+      共同构成冀团团的主要视觉特征。
+    </p>
+
+    <h2>数字化过程</h2>
+    <p>
+      模型由二维图片生成三维白模，再通过 Blender 完成材质分区、
+      配色调整和 GLB 网页格式导出。
+    </p>
+
+    <div class="tip">
+      鼠标拖动旋转模型，滚轮缩放。
+    </div>
+  </aside>
+</body>
+</html>
